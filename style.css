@@ -1,0 +1,803 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Figtree", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header-main {
+    display: block;
+    min-height: 70px;
+    align-content: center;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inner .logo-name {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-inner .header-menu>ul {
+    display: flex;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-menu ul li a:hover {
+    color: rgb(130, 255, 31);
+}
+
+.header-inner .header-contact {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 12px 24px;
+    transition: 0.5s ease;
+}
+
+.header-inner .header-contact:hover {
+    border-color: rgb(130, 255, 31);
+}
+
+.header-inner .menu-button{
+    display: none;
+}
+
+/* Header */
+
+/* Hero Start */
+.hero-main {
+    display: grid;
+    padding-top: 110px;
+    justify-content: center;
+}
+
+.hero-main .hero-inner {
+    display: block;
+}
+
+.hero-inner .developer-name {
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.developer-name .available-for-work {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 70px;
+}
+
+svg {
+    height: 16px;
+    width: 16px;
+    fill: rgb(130, 255, 31);
+}
+
+.svg-content {
+    display: inline-block;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 22.4px;
+    border: 1px solid grey;
+    padding: 2px 10px;
+    border-radius: 100px;
+}
+
+.developer-name .full-name {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 70px;
+    font-size: 195px;
+    line-height: 190px;
+    letter-spacing: -9px;
+    font-weight: 400;
+}
+
+.full-name .first-name {
+    display: block;
+}
+
+.hero-inner .about-dev{
+    justify-items: center;
+    display: grid;
+}
+
+.hero-inner .about-dev .developer-info {
+    justify-items: center;
+    display: grid;
+    max-width: 720px;
+    padding-bottom: 100px;
+    line-height: 22.4px;
+}
+
+.developer-info p {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.schedule-button {
+    display: inline-block;
+    border: 1px solid rgb(130, 255, 31);
+    background-color: rgb(130, 255, 31);
+    border-radius: 100px;
+    padding: 14px 18px;
+    gap: 4px;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+
+.schedule-button svg {
+    width: 16px;
+    height: auto;
+    stroke: black;
+}
+
+.schedule-button a {
+    color: black;
+}
+
+.hero-inner .developer-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-inner .developer-image img {
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 9999px;
+}
+/* Hero End */
+
+/* Why Choose Me Section Start */
+.why-main {
+    padding: 150px 0px;
+    background-color: rgb(248, 248, 248);
+    display: block;
+}
+
+.why-main .why-inner {
+    display: block;
+}
+
+.why-inner .why-choose-me {
+    display: block;
+}
+
+.svg-content span {
+    color: rgb(17, 17, 17);
+}
+
+.why-choose-me h2 {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    line-height: 80px;
+    color: rgb(17, 17, 17);
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -3px;
+}
+
+.why-inner .why-about {
+    display: flex;
+    gap: 0px 20px;
+}
+
+.why-about .child {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(47, 47, 47, 0.06) 0px 12px 42px 0px;
+    border-color: rgb(26, 26, 26);
+}
+
+.why-about .child .child-inner {
+    display: block;
+    width: 33.33%;
+}
+
+.why-about .child .child-inner h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 12px;
+    color: rgb(26, 26, 26);
+}
+
+.why-about .child .child-inner p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgb(26, 26, 26);
+}
+
+.why-about .child .child-inner .svg {
+    background-color: rgb(26, 26, 26);
+    height: 48px;
+    line-height: 24px;
+    width: 48px;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.why-about .child .child-inner .svg svg {
+    fill: none;
+    stroke: rgb(130, 255, 31);
+    height: 24px;
+    width: 24px;
+}
+/* Why Choose Me Section End */
+
+/* What I Offer Section Start */
+.offer-main {
+    display: block;
+    padding: 100px 0px;
+}
+
+.offer-main .offer-inner {
+    display: block;
+}
+
+.offer-inner .offer-title span {
+    display: block;
+}
+
+.offer-inner .offer-title {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    line-height: 80px;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -3px;
+}
+
+.offer-inner .about-offering {
+    display: flex;
+    gap: 0px 20px;
+}
+
+.about-offering .child {
+    display: block;
+}
+
+.about-offering .child .inner-child {
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about-offering .child .inner-child .box-content {
+    display: block;
+    width: 100%;
+}
+
+.box-content h3 {
+    color: black;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.box-content p {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 400;
+    color: black;
+}
+
+.about-offering .child .inner-child .elements {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.elements p {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 400;
+    color: black;
+    padding-bottom: 12px;
+}
+
+.elements :first-child {
+    border-bottom: 1px solid black;
+}
+
+.elements :nth-child(2) {
+    border-bottom: 1px solid black;
+}
+
+.about-offering .child .inner-child .schedule-button {
+    background-color: rgb(201, 255, 144);
+}
+
+.about-offering .child .inner-child .schedule-button svg {
+    fill: rgb(201, 255, 144);
+
+}
+
+.about-offering .child:first-child {
+    background-color: rgb(130, 255, 31);
+    border-radius: 20px;
+}
+
+.about-offering .child:nth-child(2) {
+    background-color: rgb(26, 26, 26);
+    border-radius: 20px;
+}
+
+.about-offering .child:nth-child(3) {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.about-offering .child:nth-child(2) .inner-child .box-content h3 {
+    color: white;
+}
+
+.about-offering .child:nth-child(2) .inner-child .box-content p {
+    color: white;
+}
+
+.about-offering .child:nth-child(2) .inner-child .elements p {
+    color: white;
+    border-color: white;
+}
+
+.about-offering .child .inner-child .schedule-button {
+    display: flex;
+    cursor: pointer;
+}
+/* What I Offer Section End */
+
+/* My Process Section Start */
+.my-process {
+    padding: 140px 0px;
+    display: block;
+    background-color: white;
+}
+
+.my-process .my-process-inner {
+    display: flex;
+    gap: 40px;
+}
+
+.my-process-inner .my-process-button-and-content {
+    width: 50%;
+}
+
+.my-process-button-and-content .my-process-content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px 0px;
+}
+
+.my-process-button-and-content h2 {
+    padding-top: 8px;
+    padding-bottom: 40px;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -3px;
+    color: black;
+    font-weight: 400;
+}
+
+.my-process-button-and-content h2 span {
+    display: block;
+    color: black;
+}
+
+.my-process-button-and-content .my-process-content-inner .child .inner-child h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 32px;
+}
+
+.my-process-button-and-content .my-process-content-inner .child .inner-child p {
+    font-size: 16px;
+    color: black;
+    line-height: 22.4px;
+    padding-bottom: 32px;
+}
+
+.my-process-button-and-content .my-process-content-inner .child .inner-child {
+    border-bottom: 1px solid grey;
+}
+/* My Process Section End */
+
+/*  Contact Us Section Start */
+.contact-us-main {
+    display: block;
+    background-color: #1a1a1a;
+    padding: 120px 24px;
+}
+
+.contact-us-main .contact-us-inner {
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    border-radius: 20px;
+    gap: 8px;
+    padding: 80px 60px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-us-main .contact-us-inner .svg-content span {
+    color: white;
+}
+
+.contact-us-main .contact-us-inner p {
+    font-size: 80px;
+    letter-spacing: -3px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.contact-us-main .contact-us-inner p span {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.contact-us-main .contact-us-inner a {
+    font-size: 32px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 6px;
+}
+
+.contact-us-main .contact-us-inner a svg {
+    height: 32px;
+    width: 32px;
+    fill: none;
+}
+/*  Contact Us Section End */
+
+/* Coming Soon Section Start */
+.coming-soon-main {
+    background-color: #1a1a1a;
+    display: block;
+    padding: 140px 24px;
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+.coming-soon-main .coming-soon-inner {
+    padding: 80px 60px;
+    background: linear-gradient(-45deg, #00ff87, #60efff, #00ff87, #b4f000);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation: gradientMove 2s ease infinite;
+    background-size: 400% 400%;
+}
+
+.coming-soon-main .coming-soon-inner p {
+    font-size: 80px;
+    color: black;
+    letter-spacing: -3px;
+    text-transform: capitalize;
+    line-height: 80px;
+}
+
+.coming-soon-main .coming-soon-inner p span {
+    padding-top: 50px;
+    display: block;
+    color: black;
+}
+/* Coming Soon Section End */
+
+/* Footer Section Start */
+.footer {
+    background-color: #1a1a1a;
+    /* dark navy/black – change to match your theme */
+    color: #e0e0e0;
+    padding: 60px 20px 30px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.footer .footer-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-brand{
+    display: block;
+}
+
+.footer-brand p {
+    font-size: 16px;
+    opacity: 1;
+    max-width: 300px;
+}
+
+.footer-links {
+    display: flex;
+    justify-items: right;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: rgb(130, 255, 31);
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+/* Footer Section End */
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@media (max-width:767px) {
+.container{
+    max-width: 767px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 24px;
+    box-sizing: border-box;
+}   
+
+/* Hrader Start */
+.header-main>.container{
+    padding: 0px 20px;
+
+}
+
+.header-inner .header-menu{
+    display: none;
+}
+
+.header-inner .header-contact{
+    display: none;
+}
+
+.header-inner .menu-button{
+    display: block;
+}
+
+.header-inner .logo-name{
+    font-size: 18px;
+    font-weight: 500;
+}
+.header-inner .menu-button svg{
+    stroke: rgb(130, 255, 31);
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+/* Hrader End */
+
+/* Hero Section start */
+.hero-main{
+    padding-top: 60px;
+}
+.hero-main .full-name{
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0px;
+    padding-bottom: 0;
+}
+
+.hero-inner .developer-image img{
+    height: 100px;
+    width: 100px;
+    border-width: 2px;
+    left: 40%;
+    top: 21%;
+}
+
+.hero-inner .developer-name{
+    margin-bottom: 0px;
+}
+
+.hero-inner .about-dev .developer-info p{
+    padding-top: 35px;
+    font-size: 14px;
+}
+
+.hero-inner .about-dev .developer-info {
+  max-width: 520px;
+}
+
+.about-dev .schedule-button{
+    padding: 7px 9px;
+}
+
+.svg-content{
+    font-size: 14px;
+}
+
+.schedule-button a{
+    font-size: 14px;
+}
+/* Hero Section End */
+
+/* Why Choose Me Start */
+.why-main{
+    padding: 80px 0px;
+}
+.why-choose-me h2{
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 40px;
+}
+
+.why-inner .why-about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+}
+
+.why-about .child .child-inner{
+    width: 100%;
+}
+/* Why Choose Me Start */
+
+/* What I Offer Section Start */
+.offer-main{
+    padding: 60px 0px;
+}
+
+.offer-inner .offer-title{
+    font-size: 40px;
+    line-height: 50px;
+
+}
+
+.offer-inner .offer-title span{
+    display: inline-block;
+}
+
+.offer-inner .about-offering{
+    flex-direction: column;
+    gap: 20px 0px;
+}
+/* What I Offer Section End */
+
+/* My Process Section Start */
+.my-process{
+    padding: 70px 0px;
+}
+
+.my-process .my-process-inner{
+    flex-direction: column;
+}
+
+.my-process-inner .my-process-button-and-content {
+    width: 100%;
+}
+
+.my-process-button-and-content h2{
+        font-size: 50px;
+        line-height: 50px;
+}
+
+.my-process-button-and-content h2 span{
+    display: inline-block;
+}
+
+.my-process-inner .my-process-button-and-content .my-process-content-inner .child .inner-child h3{
+    font-size: 24px;
+}
+/* My Process Section End */
+
+/* Contact Us Section Start */
+.contact-us-main{
+    padding: 60px 0px;
+}
+.contact-us-main .contact-us-inner p{
+    font-size: 50px;
+}
+
+.contact-us-main .contact-us-inner a{
+    font-size: 20px;
+}
+/* Contact Us Section End */
+
+/* Coming Soon Section Start */
+.coming-soon-main{
+    padding: 60px 24px;
+}
+
+.coming-soon-main .coming-soon-inner p{
+    font-size: 40px;
+    line-height: 40px;
+}
+/* Coming Soon Section End */
+
+/* Footer Start */
+.footer .footer-inner{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .footer-inner .footer-brand{
+    display: flex;
+    justify-content: center;
+}
+.footer .footer-inner .footer-brand p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer .footer-inner .footer-brand p span{
+    display: block;
+}
+.footer .footer-inner .footer-links{
+    justify-content: center;
+}
+.footer .footer-inner .footer-links a{
+    font-size: 14px;
+}
+/* Footer End */
+}
